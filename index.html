@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBT App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>CBT App</h1>
+    <div id="quiz-container">
+      <div id="question-container">
+        <p class="question" id="question"></p>
+        <div class="options" id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+      <div id="result"></div>
+      <button onclick="restartQuiz()" style="display:none;" id="restartBtn">Restart</button>
+    </div>
+  </div>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
